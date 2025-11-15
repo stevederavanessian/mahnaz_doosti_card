@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mahnaz Doosti – Business Card</title>
+  <title>Mahnaz Doosti – Digital Business Card | کارت ویزیت دیجیتال مهناز دوستی</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -14,38 +14,193 @@
       justify-content: center;
       min-height: 100vh;
     }
-    .wrap {
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
       max-width: 520px;
       width: 100%;
-      padding: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
       box-sizing: border-box;
     }
-    .card-img {
+    .photo {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
       margin-bottom: 16px;
       display: block;
     }
-    .note {
-      text-align: center;
+    .company {
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+      color: #111827;
+    }
+    .title {
+      font-size: 15px;
+      color: #4b5563;
+      margin: 4px 0 2px 0;
+    }
+    .license {
       font-size: 13px;
       color: #6b7280;
-      margin-top: 4px;
+      margin-bottom: 12px;
     }
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #9ca3af;
+      margin: 14px 0 4px 0;
+      font-weight: 600;
+    }
+    .services, .services-fa {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: #374151;
+    }
+    .services li,
+    .services-fa li {
+      margin-bottom: 3px;
+    }
+    .item {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+    .label {
+      font-weight: 600;
+      color: #4b5563;
+    }
+    .actions {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #111827;
+      color: #f9fafb;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #111827;
+      border: 1px solid #d1d5db;
+    }
+    .divider {
+      margin: 14px 0;
+      border-top: 1px solid #e5e7eb;
+    }
+    .fa-block {
+      direction: rtl;
+      text-align: right;
+      font-size: 14px;
+      color: #111827;
+    }
+    .fa-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #4b5563;
+    }
+    .fa-small {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .footer-note {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    a { color: #2563eb; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <!-- front side -->
-    <img src="front.jpg" alt="Mahnaz Doosti business card – front" class="card-img">
+  <div class="card">
+    <!-- عکس کارت ویزیت -->
+    <img
+      src="WhatsApp Image 2025-11-14 at 15.51.54_00112442.jpg"
+      alt="Mahnaz Doosti business card"
+      class="photo"
+    >
 
-    <!-- back side -->
-    <img src="back.jpg" alt="Mahnaz Doosti business card – back" class="card-img">
+    <!-- متن انگلیسی -->
+    <div class="company">ADVANTAGE Gold Partners</div>
+    <h1 class="name">Mahnaz Doosti</h1>
+    <div class="title">Life &amp; Annuity Expert</div>
+    <div class="license">CA License #0M89969</div>
 
-    <div class="note">
-      EN: Scan QR to view both sides of Mahnaz Doosti’s business card.<br>
-      فا: با اسکن QR، هر دو روی کارت ویزیت مهناز دوستی را می‌بینید.
+    <div class="section-title">Services</div>
+    <ul class="services">
+      <li>Wealth Preservation Strategies</li>
+      <li>Life &amp; Disability Insurance</li>
+      <li>College Planning</li>
+      <li>Living Benefits</li>
+      <li>Retirement Planning</li>
+      <li>Investment Without Risk</li>
+    </ul>
+
+    <div class="section-title">Contact</div>
+    <div class="item"><span class="label">Phone:</span> <a href="tel:+18189188276">(818) 918-8276</a></div>
+    <div class="item"><span class="label">Email:</span> <a href="mailto:mahnazdoosti.la@gmail.com">mahnazdoosti.la@gmail.com</a></div>
+    <div class="item"><span class="label">Website:</span> <a href="https://advantagegoldpartners.com" target="_blank" rel="noopener">advantagegoldpartners.com</a></div>
+
+    <div class="actions">
+      <!-- اگر فایل vcf را در همین ریپو گذاشتی با همین اسم، این دکمه کار می‌کند -->
+      <a class="btn btn-primary" href="mahnaz_doosti_contact.vcf" download>Save Contact to Phone</a>
+      <a class="btn btn-outline" href="mailto:mahnazdoosti.la@gmail.com">Email Mahnaz</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- متن فارسی -->
+    <div class="fa-block">
+      <div class="fa-title">کارت ویزیت دیجیتال – مهناز دوستی</div>
+      <div class="fa-small">متخصص بیمه عمر و اندوخته | ADVANTAGE Gold Partners</div>
+
+      <div style="margin-top:10px; font-weight:600;">خدمات:</div>
+      <ul class="services-fa">
+        <li>استراتژی‌های حفظ و افزایش دارایی</li>
+        <li>بیمه عمر و ازکارافتادگی</li>
+        <li>برنامه‌ریزی مالی برای دانشگاه و تحصیل</li>
+        <li>مزایای نقدی در طول حیات (Living Benefits)</li>
+        <li>برنامه‌ریزی بازنشستگی</li>
+        <li>سرمایه‌گذاری بدون ریسک از دست دادن اصل سرمایه</li>
+      </ul>
+
+      <div style="margin-top:8px; font-weight:600;">اطلاعات تماس:</div>
+      <div>تلفن: <a href="tel:+18189188276">(۸۱۸) ۹۱۸–۸۲۷۶</a></div>
+      <div>ایمیل: <a href="mailto:mahnazdoosti.la@gmail.com">mahnazdoosti.la@gmail.com</a></div>
+      <div>وب‌سایت: <a href="https://advantagegoldpartners.com" target="_blank" rel="noopener">advantagegoldpartners.com</a></div>
+      <div style="margin-top:6px; font-size:12px; color:#6b7280;">
+        شماره لایسنس ایالت کالیفرنیا: CA Lic #0M89969
+      </div>
+    </div>
+
+    <div class="footer-note">
+      EN: Scan the QR code to open this page, view the card image and full details, then tap “Save Contact” to add it to your phone.<br>
+      فا: با اسکن QR این صفحه باز می‌شود؛ هم عکس کارت ویزیت را می‌بینید، هم همهٔ اطلاعات را. بعد روی «Save Contact» بزنید تا به مخاطبین شما اضافه شود.
     </div>
   </div>
 </body>
